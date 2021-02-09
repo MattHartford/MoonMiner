@@ -1,0 +1,12 @@
+C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\SpaceTraderAssets\bin\Debug\SpaceTraderAssets.dll
+C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\SpaceTraderAssets\bin\Debug\SpaceTraderAssets.pdb
+C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.csproj.CoreCompileInputs.cache
+C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.dll
+C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.pdb
+C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.csprojAssemblyReference.cache
+C:\Users\Mateu\source\repos\MoonMiner\SpaceTraderAssets\bin\Debug\SpaceTraderAssets.dll
+C:\Users\Mateu\source\repos\MoonMiner\SpaceTraderAssets\bin\Debug\SpaceTraderAssets.pdb
+C:\Users\Mateu\source\repos\MoonMiner\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.csprojAssemblyReference.cache
+C:\Users\Mateu\source\repos\MoonMiner\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.csproj.CoreCompileInputs.cache
+C:\Users\Mateu\source\repos\MoonMiner\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.dll
+C:\Users\Mateu\source\repos\MoonMiner\SpaceTraderAssets\obj\Debug\SpaceTraderAssets.pdb
