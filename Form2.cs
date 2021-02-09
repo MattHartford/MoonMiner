@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using 
 namespace MoonMiner
     {
     public partial class MoonMiner : Form
@@ -23,6 +24,11 @@ namespace MoonMiner
             }
 
         private void _RunerthButton_Click(object sender , EventArgs e)
+            {
+
+            }
+
+        private void ShipPicture_Click(object sender , EventArgs e)
             {
 
             }

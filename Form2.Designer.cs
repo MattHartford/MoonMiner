@@ -71,7 +71,7 @@ namespace MoonMiner
             // _BuyShipButton
             // 
             this._BuyShipButton.BackColor = System.Drawing.Color.DarkOrchid;
-            this._BuyShipButton.Location = new System.Drawing.Point(480, 140);
+            this._BuyShipButton.Location = new System.Drawing.Point(544, 144);
             this._BuyShipButton.Name = "_BuyShipButton";
             this._BuyShipButton.Size = new System.Drawing.Size(170, 20);
             this._BuyShipButton.TabIndex = 60;
@@ -83,7 +83,7 @@ namespace MoonMiner
             this.SpaceFleetValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.SpaceFleetValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SpaceFleetValue.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.SpaceFleetValue.Location = new System.Drawing.Point(381, 139);
+            this.SpaceFleetValue.Location = new System.Drawing.Point(471, 142);
             this.SpaceFleetValue.Name = "SpaceFleetValue";
             this.SpaceFleetValue.Size = new System.Drawing.Size(17, 13);
             this.SpaceFleetValue.TabIndex = 59;
@@ -153,7 +153,7 @@ namespace MoonMiner
             // 
             this.SpaceFleetLabel.AutoSize = true;
             this.SpaceFleetLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.SpaceFleetLabel.Location = new System.Drawing.Point(313, 139);
+            this.SpaceFleetLabel.Location = new System.Drawing.Point(404, 141);
             this.SpaceFleetLabel.Name = "SpaceFleetLabel";
             this.SpaceFleetLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SpaceFleetLabel.Size = new System.Drawing.Size(64, 13);
@@ -219,9 +219,9 @@ namespace MoonMiner
             // 
             this._RunerthButton.BackColor = System.Drawing.Color.Gold;
             this._RunerthButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this._RunerthButton.Location = new System.Drawing.Point(678, 20);
+            this._RunerthButton.Location = new System.Drawing.Point(763, 29);
             this._RunerthButton.Name = "_RunerthButton";
-            this._RunerthButton.Size = new System.Drawing.Size(96, 20);
+            this._RunerthButton.Size = new System.Drawing.Size(108, 20);
             this._RunerthButton.TabIndex = 47;
             this._RunerthButton.Text = "Runerth";
             this._RunerthButton.UseVisualStyleBackColor = false;
@@ -230,9 +230,9 @@ namespace MoonMiner
             // _KetuneButton
             // 
             this._KetuneButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this._KetuneButton.Location = new System.Drawing.Point(678, 435);
+            this._KetuneButton.Location = new System.Drawing.Point(948, 153);
             this._KetuneButton.Name = "_KetuneButton";
-            this._KetuneButton.Size = new System.Drawing.Size(96, 20);
+            this._KetuneButton.Size = new System.Drawing.Size(108, 20);
             this._KetuneButton.TabIndex = 46;
             this._KetuneButton.Text = "Ketune";
             this._KetuneButton.UseVisualStyleBackColor = false;
@@ -240,9 +240,9 @@ namespace MoonMiner
             // _YacliteButton
             // 
             this._YacliteButton.BackColor = System.Drawing.Color.Red;
-            this._YacliteButton.Location = new System.Drawing.Point(678, 330);
+            this._YacliteButton.Location = new System.Drawing.Point(948, 29);
             this._YacliteButton.Name = "_YacliteButton";
-            this._YacliteButton.Size = new System.Drawing.Size(96, 20);
+            this._YacliteButton.Size = new System.Drawing.Size(108, 20);
             this._YacliteButton.TabIndex = 45;
             this._YacliteButton.Text = "Yaclite";
             this._YacliteButton.UseVisualStyleBackColor = false;
@@ -250,9 +250,9 @@ namespace MoonMiner
             // _GederthButton
             // 
             this._GederthButton.BackColor = System.Drawing.Color.Lime;
-            this._GederthButton.Location = new System.Drawing.Point(678, 226);
+            this._GederthButton.Location = new System.Drawing.Point(763, 277);
             this._GederthButton.Name = "_GederthButton";
-            this._GederthButton.Size = new System.Drawing.Size(96, 20);
+            this._GederthButton.Size = new System.Drawing.Size(108, 20);
             this._GederthButton.TabIndex = 44;
             this._GederthButton.Text = "Gederth";
             this._GederthButton.UseVisualStyleBackColor = false;
@@ -260,9 +260,9 @@ namespace MoonMiner
             // _HorutaButton
             // 
             this._HorutaButton.BackColor = System.Drawing.Color.PaleTurquoise;
-            this._HorutaButton.Location = new System.Drawing.Point(678, 125);
+            this._HorutaButton.Location = new System.Drawing.Point(763, 153);
             this._HorutaButton.Name = "_HorutaButton";
-            this._HorutaButton.Size = new System.Drawing.Size(96, 20);
+            this._HorutaButton.Size = new System.Drawing.Size(108, 20);
             this._HorutaButton.TabIndex = 43;
             this._HorutaButton.Text = "Horuta";
             this._HorutaButton.UseVisualStyleBackColor = false;
@@ -280,12 +280,13 @@ namespace MoonMiner
             // ShipPicture
             // 
             this.ShipPicture.Image = ((System.Drawing.Image)(resources.GetObject("ShipPicture.Image")));
-            this.ShipPicture.Location = new System.Drawing.Point(313, 12);
+            this.ShipPicture.Location = new System.Drawing.Point(361, 17);
             this.ShipPicture.Name = "ShipPicture";
             this.ShipPicture.Size = new System.Drawing.Size(162, 121);
             this.ShipPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ShipPicture.TabIndex = 41;
             this.ShipPicture.TabStop = false;
+            this.ShipPicture.Click += new System.EventHandler(this.ShipPicture_Click);
             // 
             // MoonMinerTitle
             // 
@@ -300,7 +301,7 @@ namespace MoonMiner
             // SpaceMarket
             // 
             this.SpaceMarket.Image = ((System.Drawing.Image)(resources.GetObject("SpaceMarket.Image")));
-            this.SpaceMarket.Location = new System.Drawing.Point(480, 12);
+            this.SpaceMarket.Location = new System.Drawing.Point(544, 17);
             this.SpaceMarket.Name = "SpaceMarket";
             this.SpaceMarket.Size = new System.Drawing.Size(170, 121);
             this.SpaceMarket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -309,50 +310,55 @@ namespace MoonMiner
             // 
             // KetunePic
             // 
+            this.KetunePic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.KetunePic.Image = ((System.Drawing.Image)(resources.GetObject("KetunePic.Image")));
-            this.KetunePic.Location = new System.Drawing.Point(678, 460);
+            this.KetunePic.Location = new System.Drawing.Point(948, 179);
             this.KetunePic.Name = "KetunePic";
-            this.KetunePic.Size = new System.Drawing.Size(96, 75);
+            this.KetunePic.Size = new System.Drawing.Size(108, 92);
             this.KetunePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.KetunePic.TabIndex = 38;
             this.KetunePic.TabStop = false;
             // 
             // YaclitePic
             // 
+            this.YaclitePic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.YaclitePic.Image = ((System.Drawing.Image)(resources.GetObject("YaclitePic.Image")));
-            this.YaclitePic.Location = new System.Drawing.Point(678, 356);
+            this.YaclitePic.Location = new System.Drawing.Point(948, 55);
             this.YaclitePic.Name = "YaclitePic";
-            this.YaclitePic.Size = new System.Drawing.Size(96, 75);
+            this.YaclitePic.Size = new System.Drawing.Size(108, 92);
             this.YaclitePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.YaclitePic.TabIndex = 37;
             this.YaclitePic.TabStop = false;
             // 
             // GederthPic
             // 
+            this.GederthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GederthPic.Image = ((System.Drawing.Image)(resources.GetObject("GederthPic.Image")));
-            this.GederthPic.Location = new System.Drawing.Point(678, 251);
+            this.GederthPic.Location = new System.Drawing.Point(763, 303);
             this.GederthPic.Name = "GederthPic";
-            this.GederthPic.Size = new System.Drawing.Size(96, 75);
+            this.GederthPic.Size = new System.Drawing.Size(108, 92);
             this.GederthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.GederthPic.TabIndex = 36;
             this.GederthPic.TabStop = false;
             // 
             // HorutaPic
             // 
+            this.HorutaPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HorutaPic.Image = ((System.Drawing.Image)(resources.GetObject("HorutaPic.Image")));
-            this.HorutaPic.Location = new System.Drawing.Point(678, 150);
+            this.HorutaPic.Location = new System.Drawing.Point(763, 179);
             this.HorutaPic.Name = "HorutaPic";
-            this.HorutaPic.Size = new System.Drawing.Size(96, 75);
+            this.HorutaPic.Size = new System.Drawing.Size(108, 92);
             this.HorutaPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.HorutaPic.TabIndex = 35;
             this.HorutaPic.TabStop = false;
             // 
             // RunerthPic
             // 
+            this.RunerthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.RunerthPic.Image = ((System.Drawing.Image)(resources.GetObject("RunerthPic.Image")));
-            this.RunerthPic.Location = new System.Drawing.Point(678, 45);
+            this.RunerthPic.Location = new System.Drawing.Point(763, 55);
             this.RunerthPic.Name = "RunerthPic";
-            this.RunerthPic.Size = new System.Drawing.Size(96, 75);
+            this.RunerthPic.Size = new System.Drawing.Size(108, 92);
             this.RunerthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RunerthPic.TabIndex = 34;
             this.RunerthPic.TabStop = false;
@@ -362,7 +368,9 @@ namespace MoonMiner
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(815, 669);
+            this.BackgroundImage = global::MoonMiner.Properties.Resources.PiexelSpaceBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1141, 643);
             this.Controls.Add(this._BuyShipButton);
             this.Controls.Add(this.SpaceFleetValue);
             this.Controls.Add(this.MadtweedValue);
