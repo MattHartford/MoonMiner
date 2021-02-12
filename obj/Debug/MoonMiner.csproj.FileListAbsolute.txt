@@ -14,3 +14,4 @@ C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.csproj.GenerateResourc
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.csproj.CoreCompileInputs.cache
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.exe
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.pdb
+C:\Users\Mateu\source\repos\MoonMiner\obj\Debug\MoonMiner.UserControl1.resources

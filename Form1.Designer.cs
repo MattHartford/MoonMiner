@@ -1,8 +1,7 @@
-﻿
-namespace MoonMiner
+﻿namespace MoonMiner
+{
+    partial class Form1
     {
-    partial class MoonMiner
-        {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -13,13 +12,13 @@ namespace MoonMiner
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
-            {
+        {
             if (disposing && (components != null))
-                {
+            {
                 components.Dispose();
-                }
-            base.Dispose(disposing);
             }
+            base.Dispose(disposing);
+        }
 
         #region Windows Form Designer generated code
 
@@ -27,9 +26,11 @@ namespace MoonMiner
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent( )
-            {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoonMiner));
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.label1 = new System.Windows.Forms.Label();
+            this.SellAll = new System.Windows.Forms.Button();
             this._BuyShipButton = new System.Windows.Forms.Button();
             this.SpaceFleetValue = new System.Windows.Forms.TextBox();
             this.MadtweedValue = new System.Windows.Forms.TextBox();
@@ -68,25 +69,50 @@ namespace MoonMiner
             ((System.ComponentModel.ISupportInitialize)(this.RunerthPic)).BeginInit();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label1.Location = new System.Drawing.Point(356, 148);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 91;
+            this.label1.Text = "Earth Pennies";
+            // 
+            // SellAll
+            // 
+            this.SellAll.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.SellAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellAll.Location = new System.Drawing.Point(532, 164);
+            this.SellAll.Name = "SellAll";
+            this.SellAll.Size = new System.Drawing.Size(170, 24);
+            this.SellAll.TabIndex = 90;
+            this.SellAll.Text = "Sell All Resources";
+            this.SellAll.UseVisualStyleBackColor = false;
+            // 
             // _BuyShipButton
             // 
             this._BuyShipButton.BackColor = System.Drawing.Color.DarkOrchid;
-            this._BuyShipButton.Location = new System.Drawing.Point(544, 144);
+            this._BuyShipButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._BuyShipButton.Location = new System.Drawing.Point(532, 132);
             this._BuyShipButton.Name = "_BuyShipButton";
-            this._BuyShipButton.Size = new System.Drawing.Size(170, 20);
-            this._BuyShipButton.TabIndex = 60;
+            this._BuyShipButton.Size = new System.Drawing.Size(168, 24);
+            this._BuyShipButton.TabIndex = 89;
             this._BuyShipButton.Text = "BUY 1 SPACESHIP";
             this._BuyShipButton.UseVisualStyleBackColor = false;
+            this._BuyShipButton.Click += new System.EventHandler(this._BuyShipButton_Click);
             // 
             // SpaceFleetValue
             // 
             this.SpaceFleetValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.SpaceFleetValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SpaceFleetValue.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.SpaceFleetValue.Location = new System.Drawing.Point(471, 142);
+            this.SpaceFleetValue.Location = new System.Drawing.Point(420, 132);
             this.SpaceFleetValue.Name = "SpaceFleetValue";
             this.SpaceFleetValue.Size = new System.Drawing.Size(17, 13);
-            this.SpaceFleetValue.TabIndex = 59;
+            this.SpaceFleetValue.TabIndex = 88;
             this.SpaceFleetValue.Text = "0";
             // 
             // MadtweedValue
@@ -94,11 +120,11 @@ namespace MoonMiner
             this.MadtweedValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.MadtweedValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MadtweedValue.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.MadtweedValue.Location = new System.Drawing.Point(255, 143);
+            this.MadtweedValue.Location = new System.Drawing.Point(243, 131);
             this.MadtweedValue.Multiline = true;
             this.MadtweedValue.Name = "MadtweedValue";
             this.MadtweedValue.Size = new System.Drawing.Size(43, 20);
-            this.MadtweedValue.TabIndex = 58;
+            this.MadtweedValue.TabIndex = 87;
             this.MadtweedValue.Text = "0";
             // 
             // EtheriumValue
@@ -106,11 +132,11 @@ namespace MoonMiner
             this.EtheriumValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.EtheriumValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EtheriumValue.ForeColor = System.Drawing.Color.Red;
-            this.EtheriumValue.Location = new System.Drawing.Point(255, 127);
+            this.EtheriumValue.Location = new System.Drawing.Point(243, 115);
             this.EtheriumValue.Multiline = true;
             this.EtheriumValue.Name = "EtheriumValue";
             this.EtheriumValue.Size = new System.Drawing.Size(43, 20);
-            this.EtheriumValue.TabIndex = 57;
+            this.EtheriumValue.TabIndex = 86;
             this.EtheriumValue.Text = "0";
             // 
             // EmeraldValue
@@ -118,11 +144,11 @@ namespace MoonMiner
             this.EmeraldValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.EmeraldValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmeraldValue.ForeColor = System.Drawing.Color.Lime;
-            this.EmeraldValue.Location = new System.Drawing.Point(255, 110);
+            this.EmeraldValue.Location = new System.Drawing.Point(243, 98);
             this.EmeraldValue.Multiline = true;
             this.EmeraldValue.Name = "EmeraldValue";
             this.EmeraldValue.Size = new System.Drawing.Size(43, 20);
-            this.EmeraldValue.TabIndex = 56;
+            this.EmeraldValue.TabIndex = 85;
             this.EmeraldValue.Text = "0";
             // 
             // PlatinumValue
@@ -130,11 +156,11 @@ namespace MoonMiner
             this.PlatinumValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.PlatinumValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PlatinumValue.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PlatinumValue.Location = new System.Drawing.Point(255, 91);
+            this.PlatinumValue.Location = new System.Drawing.Point(243, 79);
             this.PlatinumValue.Multiline = true;
             this.PlatinumValue.Name = "PlatinumValue";
             this.PlatinumValue.Size = new System.Drawing.Size(43, 20);
-            this.PlatinumValue.TabIndex = 55;
+            this.PlatinumValue.TabIndex = 84;
             this.PlatinumValue.Text = "0";
             // 
             // GoldValue
@@ -142,22 +168,23 @@ namespace MoonMiner
             this.GoldValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.GoldValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GoldValue.ForeColor = System.Drawing.Color.Gold;
-            this.GoldValue.Location = new System.Drawing.Point(255, 74);
+            this.GoldValue.Location = new System.Drawing.Point(243, 62);
             this.GoldValue.Multiline = true;
             this.GoldValue.Name = "GoldValue";
             this.GoldValue.Size = new System.Drawing.Size(52, 20);
-            this.GoldValue.TabIndex = 54;
+            this.GoldValue.TabIndex = 83;
             this.GoldValue.Text = "0";
             // 
             // SpaceFleetLabel
             // 
             this.SpaceFleetLabel.AutoSize = true;
+            this.SpaceFleetLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SpaceFleetLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.SpaceFleetLabel.Location = new System.Drawing.Point(404, 141);
+            this.SpaceFleetLabel.Location = new System.Drawing.Point(356, 132);
             this.SpaceFleetLabel.Name = "SpaceFleetLabel";
             this.SpaceFleetLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SpaceFleetLabel.Size = new System.Drawing.Size(64, 13);
-            this.SpaceFleetLabel.TabIndex = 53;
+            this.SpaceFleetLabel.TabIndex = 82;
             this.SpaceFleetLabel.Text = "Space Fleet";
             // 
             // MadtweedLabel
@@ -165,10 +192,10 @@ namespace MoonMiner
             this.MadtweedLabel.AutoSize = true;
             this.MadtweedLabel.BackColor = System.Drawing.Color.Black;
             this.MadtweedLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.MadtweedLabel.Location = new System.Drawing.Point(179, 142);
+            this.MadtweedLabel.Location = new System.Drawing.Point(167, 130);
             this.MadtweedLabel.Name = "MadtweedLabel";
             this.MadtweedLabel.Size = new System.Drawing.Size(60, 13);
-            this.MadtweedLabel.TabIndex = 52;
+            this.MadtweedLabel.TabIndex = 81;
             this.MadtweedLabel.Text = "Madtweed ";
             // 
             // EtheriumLabel
@@ -176,10 +203,10 @@ namespace MoonMiner
             this.EtheriumLabel.AutoSize = true;
             this.EtheriumLabel.BackColor = System.Drawing.Color.Black;
             this.EtheriumLabel.ForeColor = System.Drawing.Color.Red;
-            this.EtheriumLabel.Location = new System.Drawing.Point(178, 125);
+            this.EtheriumLabel.Location = new System.Drawing.Point(166, 113);
             this.EtheriumLabel.Name = "EtheriumLabel";
             this.EtheriumLabel.Size = new System.Drawing.Size(48, 13);
-            this.EtheriumLabel.TabIndex = 51;
+            this.EtheriumLabel.TabIndex = 80;
             this.EtheriumLabel.Text = "Etherium";
             // 
             // EmeraldLabel
@@ -187,10 +214,10 @@ namespace MoonMiner
             this.EmeraldLabel.AutoSize = true;
             this.EmeraldLabel.BackColor = System.Drawing.Color.Black;
             this.EmeraldLabel.ForeColor = System.Drawing.Color.Lime;
-            this.EmeraldLabel.Location = new System.Drawing.Point(177, 109);
+            this.EmeraldLabel.Location = new System.Drawing.Point(165, 97);
             this.EmeraldLabel.Name = "EmeraldLabel";
             this.EmeraldLabel.Size = new System.Drawing.Size(75, 13);
-            this.EmeraldLabel.TabIndex = 50;
+            this.EmeraldLabel.TabIndex = 79;
             this.EmeraldLabel.Text = "Emerald Gems";
             // 
             // platinumLabel
@@ -198,10 +225,10 @@ namespace MoonMiner
             this.platinumLabel.AutoSize = true;
             this.platinumLabel.BackColor = System.Drawing.Color.Black;
             this.platinumLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.platinumLabel.Location = new System.Drawing.Point(178, 92);
+            this.platinumLabel.Location = new System.Drawing.Point(166, 80);
             this.platinumLabel.Name = "platinumLabel";
             this.platinumLabel.Size = new System.Drawing.Size(67, 13);
-            this.platinumLabel.TabIndex = 49;
+            this.platinumLabel.TabIndex = 78;
             this.platinumLabel.Text = "Platinum Ore";
             // 
             // GoldLabel
@@ -209,168 +236,181 @@ namespace MoonMiner
             this.GoldLabel.AutoSize = true;
             this.GoldLabel.BackColor = System.Drawing.Color.Black;
             this.GoldLabel.ForeColor = System.Drawing.Color.Gold;
-            this.GoldLabel.Location = new System.Drawing.Point(176, 77);
+            this.GoldLabel.Location = new System.Drawing.Point(164, 65);
             this.GoldLabel.Name = "GoldLabel";
             this.GoldLabel.Size = new System.Drawing.Size(52, 13);
-            this.GoldLabel.TabIndex = 48;
+            this.GoldLabel.TabIndex = 77;
             this.GoldLabel.Text = " Gold Ore";
             // 
             // _RunerthButton
             // 
             this._RunerthButton.BackColor = System.Drawing.Color.Gold;
+            this._RunerthButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._RunerthButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this._RunerthButton.Location = new System.Drawing.Point(763, 29);
+            this._RunerthButton.Location = new System.Drawing.Point(751, 17);
             this._RunerthButton.Name = "_RunerthButton";
             this._RunerthButton.Size = new System.Drawing.Size(108, 20);
-            this._RunerthButton.TabIndex = 47;
+            this._RunerthButton.TabIndex = 76;
             this._RunerthButton.Text = "Runerth";
             this._RunerthButton.UseVisualStyleBackColor = false;
-            this._RunerthButton.Click += new System.EventHandler(this._RunerthButton_Click);
             // 
             // _KetuneButton
             // 
             this._KetuneButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this._KetuneButton.Location = new System.Drawing.Point(948, 153);
+            this._KetuneButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._KetuneButton.Location = new System.Drawing.Point(936, 141);
             this._KetuneButton.Name = "_KetuneButton";
             this._KetuneButton.Size = new System.Drawing.Size(108, 20);
-            this._KetuneButton.TabIndex = 46;
+            this._KetuneButton.TabIndex = 75;
             this._KetuneButton.Text = "Ketune";
             this._KetuneButton.UseVisualStyleBackColor = false;
             // 
             // _YacliteButton
             // 
             this._YacliteButton.BackColor = System.Drawing.Color.Red;
-            this._YacliteButton.Location = new System.Drawing.Point(948, 29);
+            this._YacliteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._YacliteButton.Location = new System.Drawing.Point(936, 17);
             this._YacliteButton.Name = "_YacliteButton";
             this._YacliteButton.Size = new System.Drawing.Size(108, 20);
-            this._YacliteButton.TabIndex = 45;
+            this._YacliteButton.TabIndex = 74;
             this._YacliteButton.Text = "Yaclite";
             this._YacliteButton.UseVisualStyleBackColor = false;
             // 
             // _GederthButton
             // 
             this._GederthButton.BackColor = System.Drawing.Color.Lime;
-            this._GederthButton.Location = new System.Drawing.Point(763, 277);
+            this._GederthButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._GederthButton.Location = new System.Drawing.Point(751, 265);
             this._GederthButton.Name = "_GederthButton";
             this._GederthButton.Size = new System.Drawing.Size(108, 20);
-            this._GederthButton.TabIndex = 44;
+            this._GederthButton.TabIndex = 73;
             this._GederthButton.Text = "Gederth";
             this._GederthButton.UseVisualStyleBackColor = false;
             // 
             // _HorutaButton
             // 
             this._HorutaButton.BackColor = System.Drawing.Color.PaleTurquoise;
-            this._HorutaButton.Location = new System.Drawing.Point(763, 153);
+            this._HorutaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._HorutaButton.Location = new System.Drawing.Point(751, 141);
             this._HorutaButton.Name = "_HorutaButton";
             this._HorutaButton.Size = new System.Drawing.Size(108, 20);
-            this._HorutaButton.TabIndex = 43;
+            this._HorutaButton.TabIndex = 72;
             this._HorutaButton.Text = "Horuta";
             this._HorutaButton.UseVisualStyleBackColor = false;
             // 
             // IntroNaut
             // 
+            this.IntroNaut.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.IntroNaut.Image = ((System.Drawing.Image)(resources.GetObject("IntroNaut.Image")));
-            this.IntroNaut.Location = new System.Drawing.Point(179, 12);
+            this.IntroNaut.Location = new System.Drawing.Point(167, 0);
             this.IntroNaut.Name = "IntroNaut";
             this.IntroNaut.Size = new System.Drawing.Size(87, 62);
             this.IntroNaut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IntroNaut.TabIndex = 42;
+            this.IntroNaut.TabIndex = 71;
             this.IntroNaut.TabStop = false;
             // 
             // ShipPicture
             // 
+            this.ShipPicture.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ShipPicture.Image = ((System.Drawing.Image)(resources.GetObject("ShipPicture.Image")));
-            this.ShipPicture.Location = new System.Drawing.Point(361, 17);
+            this.ShipPicture.Location = new System.Drawing.Point(349, 5);
             this.ShipPicture.Name = "ShipPicture";
             this.ShipPicture.Size = new System.Drawing.Size(162, 121);
             this.ShipPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShipPicture.TabIndex = 41;
+            this.ShipPicture.TabIndex = 70;
             this.ShipPicture.TabStop = false;
-            this.ShipPicture.Click += new System.EventHandler(this.ShipPicture_Click);
             // 
             // MoonMinerTitle
             // 
+            this.MoonMinerTitle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MoonMinerTitle.Image = ((System.Drawing.Image)(resources.GetObject("MoonMinerTitle.Image")));
-            this.MoonMinerTitle.Location = new System.Drawing.Point(12, 12);
+            this.MoonMinerTitle.Location = new System.Drawing.Point(0, 0);
             this.MoonMinerTitle.Name = "MoonMinerTitle";
             this.MoonMinerTitle.Size = new System.Drawing.Size(162, 144);
             this.MoonMinerTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MoonMinerTitle.TabIndex = 40;
+            this.MoonMinerTitle.TabIndex = 69;
             this.MoonMinerTitle.TabStop = false;
             // 
             // SpaceMarket
             // 
+            this.SpaceMarket.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SpaceMarket.Image = ((System.Drawing.Image)(resources.GetObject("SpaceMarket.Image")));
-            this.SpaceMarket.Location = new System.Drawing.Point(544, 17);
+            this.SpaceMarket.Location = new System.Drawing.Point(532, 5);
             this.SpaceMarket.Name = "SpaceMarket";
             this.SpaceMarket.Size = new System.Drawing.Size(170, 121);
             this.SpaceMarket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SpaceMarket.TabIndex = 39;
+            this.SpaceMarket.TabIndex = 68;
             this.SpaceMarket.TabStop = false;
             // 
             // KetunePic
             // 
+            this.KetunePic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.KetunePic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.KetunePic.Image = ((System.Drawing.Image)(resources.GetObject("KetunePic.Image")));
-            this.KetunePic.Location = new System.Drawing.Point(948, 179);
+            this.KetunePic.Location = new System.Drawing.Point(936, 167);
             this.KetunePic.Name = "KetunePic";
             this.KetunePic.Size = new System.Drawing.Size(108, 92);
             this.KetunePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.KetunePic.TabIndex = 38;
+            this.KetunePic.TabIndex = 67;
             this.KetunePic.TabStop = false;
             // 
             // YaclitePic
             // 
+            this.YaclitePic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.YaclitePic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.YaclitePic.Image = ((System.Drawing.Image)(resources.GetObject("YaclitePic.Image")));
-            this.YaclitePic.Location = new System.Drawing.Point(948, 55);
+            this.YaclitePic.Location = new System.Drawing.Point(936, 43);
             this.YaclitePic.Name = "YaclitePic";
             this.YaclitePic.Size = new System.Drawing.Size(108, 92);
             this.YaclitePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.YaclitePic.TabIndex = 37;
+            this.YaclitePic.TabIndex = 66;
             this.YaclitePic.TabStop = false;
             // 
             // GederthPic
             // 
+            this.GederthPic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GederthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GederthPic.Image = ((System.Drawing.Image)(resources.GetObject("GederthPic.Image")));
-            this.GederthPic.Location = new System.Drawing.Point(763, 303);
+            this.GederthPic.Location = new System.Drawing.Point(751, 291);
             this.GederthPic.Name = "GederthPic";
             this.GederthPic.Size = new System.Drawing.Size(108, 92);
             this.GederthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.GederthPic.TabIndex = 36;
+            this.GederthPic.TabIndex = 65;
             this.GederthPic.TabStop = false;
             // 
             // HorutaPic
             // 
+            this.HorutaPic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.HorutaPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HorutaPic.Image = ((System.Drawing.Image)(resources.GetObject("HorutaPic.Image")));
-            this.HorutaPic.Location = new System.Drawing.Point(763, 179);
+            this.HorutaPic.Location = new System.Drawing.Point(751, 167);
             this.HorutaPic.Name = "HorutaPic";
             this.HorutaPic.Size = new System.Drawing.Size(108, 92);
             this.HorutaPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HorutaPic.TabIndex = 35;
+            this.HorutaPic.TabIndex = 64;
             this.HorutaPic.TabStop = false;
             // 
             // RunerthPic
             // 
+            this.RunerthPic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RunerthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.RunerthPic.Image = ((System.Drawing.Image)(resources.GetObject("RunerthPic.Image")));
-            this.RunerthPic.Location = new System.Drawing.Point(763, 55);
+            this.RunerthPic.Location = new System.Drawing.Point(751, 43);
             this.RunerthPic.Name = "RunerthPic";
             this.RunerthPic.Size = new System.Drawing.Size(108, 92);
             this.RunerthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.RunerthPic.TabIndex = 34;
+            this.RunerthPic.TabIndex = 63;
             this.RunerthPic.TabStop = false;
             // 
-            // MoonMiner
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = global::MoonMiner.Properties.Resources.PiexelSpaceBackground;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1141, 643);
+            this.ClientSize = new System.Drawing.Size(1067, 606);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SellAll);
             this.Controls.Add(this._BuyShipButton);
             this.Controls.Add(this.SpaceFleetValue);
             this.Controls.Add(this.MadtweedValue);
@@ -398,9 +438,9 @@ namespace MoonMiner
             this.Controls.Add(this.GederthPic);
             this.Controls.Add(this.HorutaPic);
             this.Controls.Add(this.RunerthPic);
-            this.Name = "MoonMiner";
-            this.Text = "MoonMiner";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IntroNaut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MoonMinerTitle)).EndInit();
@@ -413,9 +453,12 @@ namespace MoonMiner
             this.ResumeLayout(false);
             this.PerformLayout();
 
-            }
+        }
 
         #endregion
+
+        internal System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button SellAll;
         private System.Windows.Forms.Button _BuyShipButton;
         internal System.Windows.Forms.TextBox SpaceFleetValue;
         internal System.Windows.Forms.TextBox MadtweedValue;
@@ -444,4 +487,4 @@ namespace MoonMiner
         internal System.Windows.Forms.PictureBox HorutaPic;
         internal System.Windows.Forms.PictureBox RunerthPic;
         }
-    }
+}
