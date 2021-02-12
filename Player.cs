@@ -28,9 +28,10 @@ namespace SpaceTraderAssets
             madtweed = 0;
             coin = 0;
         }
-        public Planet PlayerLocation()
+        /*public Planet PlayerLocation()
         {
             return Planet.GalacticTradeFederation;
         }
+        */
     }
 }

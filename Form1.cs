@@ -26,5 +26,10 @@ namespace MoonMiner
             {
 
             }
+
+        private void TradeFedButton_Click(object sender , EventArgs e)
+            {
+
+            }
         }
     }

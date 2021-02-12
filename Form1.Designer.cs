@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.SellAll = new System.Windows.Forms.Button();
-            this._BuyShipButton = new System.Windows.Forms.Button();
             this.SpaceFleetValue = new System.Windows.Forms.TextBox();
             this.MadtweedValue = new System.Windows.Forms.TextBox();
             this.EtheriumValue = new System.Windows.Forms.TextBox();
@@ -58,6 +56,8 @@
             this.GederthPic = new System.Windows.Forms.PictureBox();
             this.HorutaPic = new System.Windows.Forms.PictureBox();
             this.RunerthPic = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TradeFedButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IntroNaut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MoonMinerTitle)).BeginInit();
@@ -74,42 +74,19 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(356, 148);
+            this.label1.Location = new System.Drawing.Point(256, 24);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 91;
             this.label1.Text = "Earth Pennies";
             // 
-            // SellAll
-            // 
-            this.SellAll.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.SellAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SellAll.Location = new System.Drawing.Point(532, 164);
-            this.SellAll.Name = "SellAll";
-            this.SellAll.Size = new System.Drawing.Size(170, 24);
-            this.SellAll.TabIndex = 90;
-            this.SellAll.Text = "Sell All Resources";
-            this.SellAll.UseVisualStyleBackColor = false;
-            // 
-            // _BuyShipButton
-            // 
-            this._BuyShipButton.BackColor = System.Drawing.Color.DarkOrchid;
-            this._BuyShipButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._BuyShipButton.Location = new System.Drawing.Point(532, 132);
-            this._BuyShipButton.Name = "_BuyShipButton";
-            this._BuyShipButton.Size = new System.Drawing.Size(168, 24);
-            this._BuyShipButton.TabIndex = 89;
-            this._BuyShipButton.Text = "BUY 1 SPACESHIP";
-            this._BuyShipButton.UseVisualStyleBackColor = false;
-            this._BuyShipButton.Click += new System.EventHandler(this._BuyShipButton_Click);
-            // 
             // SpaceFleetValue
             // 
             this.SpaceFleetValue.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.SpaceFleetValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SpaceFleetValue.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.SpaceFleetValue.Location = new System.Drawing.Point(420, 132);
+            this.SpaceFleetValue.Location = new System.Drawing.Point(320, 8);
             this.SpaceFleetValue.Name = "SpaceFleetValue";
             this.SpaceFleetValue.Size = new System.Drawing.Size(17, 13);
             this.SpaceFleetValue.TabIndex = 88;
@@ -180,7 +157,7 @@
             this.SpaceFleetLabel.AutoSize = true;
             this.SpaceFleetLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SpaceFleetLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.SpaceFleetLabel.Location = new System.Drawing.Point(356, 132);
+            this.SpaceFleetLabel.Location = new System.Drawing.Point(256, 8);
             this.SpaceFleetLabel.Name = "SpaceFleetLabel";
             this.SpaceFleetLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SpaceFleetLabel.Size = new System.Drawing.Size(64, 13);
@@ -247,7 +224,7 @@
             this._RunerthButton.BackColor = System.Drawing.Color.Gold;
             this._RunerthButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._RunerthButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this._RunerthButton.Location = new System.Drawing.Point(751, 17);
+            this._RunerthButton.Location = new System.Drawing.Point(976, 6);
             this._RunerthButton.Name = "_RunerthButton";
             this._RunerthButton.Size = new System.Drawing.Size(108, 20);
             this._RunerthButton.TabIndex = 76;
@@ -258,7 +235,7 @@
             // 
             this._KetuneButton.BackColor = System.Drawing.Color.RoyalBlue;
             this._KetuneButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._KetuneButton.Location = new System.Drawing.Point(936, 141);
+            this._KetuneButton.Location = new System.Drawing.Point(976, 496);
             this._KetuneButton.Name = "_KetuneButton";
             this._KetuneButton.Size = new System.Drawing.Size(108, 20);
             this._KetuneButton.TabIndex = 75;
@@ -269,7 +246,7 @@
             // 
             this._YacliteButton.BackColor = System.Drawing.Color.Red;
             this._YacliteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._YacliteButton.Location = new System.Drawing.Point(936, 17);
+            this._YacliteButton.Location = new System.Drawing.Point(976, 376);
             this._YacliteButton.Name = "_YacliteButton";
             this._YacliteButton.Size = new System.Drawing.Size(108, 20);
             this._YacliteButton.TabIndex = 74;
@@ -280,7 +257,7 @@
             // 
             this._GederthButton.BackColor = System.Drawing.Color.Lime;
             this._GederthButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._GederthButton.Location = new System.Drawing.Point(751, 265);
+            this._GederthButton.Location = new System.Drawing.Point(976, 254);
             this._GederthButton.Name = "_GederthButton";
             this._GederthButton.Size = new System.Drawing.Size(108, 20);
             this._GederthButton.TabIndex = 73;
@@ -291,7 +268,7 @@
             // 
             this._HorutaButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this._HorutaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._HorutaButton.Location = new System.Drawing.Point(751, 141);
+            this._HorutaButton.Location = new System.Drawing.Point(976, 130);
             this._HorutaButton.Name = "_HorutaButton";
             this._HorutaButton.Size = new System.Drawing.Size(108, 20);
             this._HorutaButton.TabIndex = 72;
@@ -313,7 +290,7 @@
             // 
             this.ShipPicture.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ShipPicture.Image = ((System.Drawing.Image)(resources.GetObject("ShipPicture.Image")));
-            this.ShipPicture.Location = new System.Drawing.Point(349, 5);
+            this.ShipPicture.Location = new System.Drawing.Point(0, 144);
             this.ShipPicture.Name = "ShipPicture";
             this.ShipPicture.Size = new System.Drawing.Size(162, 121);
             this.ShipPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,9 +312,9 @@
             // 
             this.SpaceMarket.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SpaceMarket.Image = ((System.Drawing.Image)(resources.GetObject("SpaceMarket.Image")));
-            this.SpaceMarket.Location = new System.Drawing.Point(532, 5);
+            this.SpaceMarket.Location = new System.Drawing.Point(0, 272);
             this.SpaceMarket.Name = "SpaceMarket";
-            this.SpaceMarket.Size = new System.Drawing.Size(170, 121);
+            this.SpaceMarket.Size = new System.Drawing.Size(160, 112);
             this.SpaceMarket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SpaceMarket.TabIndex = 68;
             this.SpaceMarket.TabStop = false;
@@ -347,7 +324,7 @@
             this.KetunePic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.KetunePic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.KetunePic.Image = ((System.Drawing.Image)(resources.GetObject("KetunePic.Image")));
-            this.KetunePic.Location = new System.Drawing.Point(936, 167);
+            this.KetunePic.Location = new System.Drawing.Point(976, 520);
             this.KetunePic.Name = "KetunePic";
             this.KetunePic.Size = new System.Drawing.Size(108, 92);
             this.KetunePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -359,7 +336,7 @@
             this.YaclitePic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.YaclitePic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.YaclitePic.Image = ((System.Drawing.Image)(resources.GetObject("YaclitePic.Image")));
-            this.YaclitePic.Location = new System.Drawing.Point(936, 43);
+            this.YaclitePic.Location = new System.Drawing.Point(976, 400);
             this.YaclitePic.Name = "YaclitePic";
             this.YaclitePic.Size = new System.Drawing.Size(108, 92);
             this.YaclitePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -371,7 +348,7 @@
             this.GederthPic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GederthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GederthPic.Image = ((System.Drawing.Image)(resources.GetObject("GederthPic.Image")));
-            this.GederthPic.Location = new System.Drawing.Point(751, 291);
+            this.GederthPic.Location = new System.Drawing.Point(976, 280);
             this.GederthPic.Name = "GederthPic";
             this.GederthPic.Size = new System.Drawing.Size(108, 92);
             this.GederthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -383,7 +360,7 @@
             this.HorutaPic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.HorutaPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HorutaPic.Image = ((System.Drawing.Image)(resources.GetObject("HorutaPic.Image")));
-            this.HorutaPic.Location = new System.Drawing.Point(751, 167);
+            this.HorutaPic.Location = new System.Drawing.Point(976, 156);
             this.HorutaPic.Name = "HorutaPic";
             this.HorutaPic.Size = new System.Drawing.Size(108, 92);
             this.HorutaPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -395,12 +372,34 @@
             this.RunerthPic.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RunerthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.RunerthPic.Image = ((System.Drawing.Image)(resources.GetObject("RunerthPic.Image")));
-            this.RunerthPic.Location = new System.Drawing.Point(751, 43);
+            this.RunerthPic.Location = new System.Drawing.Point(976, 32);
             this.RunerthPic.Name = "RunerthPic";
             this.RunerthPic.Size = new System.Drawing.Size(108, 92);
             this.RunerthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RunerthPic.TabIndex = 63;
             this.RunerthPic.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(328, 24);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(52, 20);
+            this.textBox1.TabIndex = 92;
+            this.textBox1.Text = "0";
+            // 
+            // TradeFedButton
+            // 
+            this.TradeFedButton.Location = new System.Drawing.Point(8, 392);
+            this.TradeFedButton.Name = "TradeFedButton";
+            this.TradeFedButton.Size = new System.Drawing.Size(144, 23);
+            this.TradeFedButton.TabIndex = 93;
+            this.TradeFedButton.Text = "Trade Federation Hub";
+            this.TradeFedButton.UseVisualStyleBackColor = true;
+            this.TradeFedButton.Click += new System.EventHandler(this.TradeFedButton_Click);
             // 
             // Form1
             // 
@@ -408,10 +407,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1067, 606);
+            this.ClientSize = new System.Drawing.Size(1090, 613);
+            this.Controls.Add(this.TradeFedButton);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.SellAll);
-            this.Controls.Add(this._BuyShipButton);
             this.Controls.Add(this.SpaceFleetValue);
             this.Controls.Add(this.MadtweedValue);
             this.Controls.Add(this.EtheriumValue);
@@ -458,8 +457,6 @@
         #endregion
 
         internal System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button SellAll;
-        private System.Windows.Forms.Button _BuyShipButton;
         internal System.Windows.Forms.TextBox SpaceFleetValue;
         internal System.Windows.Forms.TextBox MadtweedValue;
         internal System.Windows.Forms.TextBox EtheriumValue;
@@ -486,5 +483,7 @@
         internal System.Windows.Forms.PictureBox GederthPic;
         internal System.Windows.Forms.PictureBox HorutaPic;
         internal System.Windows.Forms.PictureBox RunerthPic;
+        internal System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button TradeFedButton;
         }
 }

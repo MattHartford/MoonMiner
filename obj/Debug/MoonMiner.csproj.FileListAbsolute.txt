@@ -8,10 +8,16 @@ C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\obj\Debug\MoonMiner.csproj.Co
 C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\obj\Debug\MoonMiner.exe
 C:\Users\Tyler\Desktop\MSSA Course\Space Game Repo\obj\Debug\MoonMiner.pdb
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.csprojAssemblyReference.cache
-C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.MoonMiner.resources
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.Properties.Resources.resources
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.csproj.GenerateResource.cache
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.csproj.CoreCompileInputs.cache
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.exe
 C:\Users\Mateu\Source\Repos\MoonMiner\obj\Debug\MoonMiner.pdb
 C:\Users\Mateu\source\repos\MoonMiner\obj\Debug\MoonMiner.UserControl1.resources
+C:\Users\Mateu\source\repos\MoonMiner\obj\Debug\MoonMiner.Form1.resources
+C:\Users\Mateu\source\repos\MoonMiner\bin\Debug\MoonMiner.exe.config
+C:\Users\Mateu\source\repos\MoonMiner\bin\Debug\MoonMiner.exe
+C:\Users\Mateu\source\repos\MoonMiner\bin\Debug\MoonMiner.pdb
+C:\Users\Mateu\source\repos\MoonMiner\bin\Debug\SpaceTraderAssets.dll
+C:\Users\Mateu\source\repos\MoonMiner\bin\Debug\SpaceTraderAssets.pdb
+C:\Users\Mateu\source\repos\MoonMiner\obj\Debug\MoonMiner.csproj.CopyComplete
