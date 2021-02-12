@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enemies.cs" />
     <Compile Include="Materials.cs" />
     <Compile Include="Planets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace SpaceTraderAssets
 {
-    public enum Materials { Gold, Silver, Emerald, Etherium, Madtweed }
+    public enum Materials { Gold, Platinum, Emerald, Etherium, Madtweed }
 }

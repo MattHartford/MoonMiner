@@ -8,30 +8,50 @@ namespace SpaceTraderAssets
 {
     public class Players
     {
-        public string PlayerName { get; set; }
-        public int PlayerLives { get; set; }
-        public int TotalResources { get; set; }
-        public int Gold { get; set; }
-        public int Platinum { get; set; }
-        public int Emerald { get; set; }
-        public int Etherium { get; set; }
-        public int Madtweed { get; set; }
-        public int Coin { get; set; }
-
-        public Players(string playerName, int playerLives, int totalResources, int gold, int platinum,
-            int emerald, int etherium, int madtweed, int coin)
+        public static string PlayerName()
         {
-            gold = 0;
-            platinum = 0;
-            emerald = 0;
-            etherium = 0;
-            madtweed = 0;
-            coin = 0;
+            string playerName = Console.ReadLine();
+            return playerName;
         }
-        /*public Planet PlayerLocation()
+        public static int PlayerLives()
         {
-            return Planet.GalacticTradeFederation;
+            int playerLives = 0;
+            return playerLives;
         }
-        */
+        public static int TotalResources()
+        {
+            int totalResources = 0;
+            return totalResources; 
+        }
+        public static int PlayerGold()
+        {
+            int gold = 0;
+            return gold;
+        }
+        public static int PlayerPlatinum()
+        {
+            int platinum = 0;
+            return platinum;
+        }
+        public static int PlayerEmerald()
+        {
+            int emerald = 0;
+            return emerald;
+        }
+        public static int PlayerEtherium()
+        {
+            int etherium = 0;
+            return etherium;
+        }
+        public static int PlayerMadtweed()
+        {
+            int madtweed = 0;
+            return madtweed;
+        }
+        public static int PlayerCoin()
+        {
+            int coin = 0;
+            return coin;
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace SpaceTraderAssets
     {
         public Horuta()
         {
-            Materials resource = Materials.Silver;
+            Materials resource = Materials.Platinum;
             ResourceValue = 2;
         }
     }
